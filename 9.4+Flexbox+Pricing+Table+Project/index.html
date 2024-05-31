@@ -14,61 +14,77 @@
       }
 
       .pricing-container {
-        max-width: 400px;
         display: flex;
-        justify-content: center;
+        gap: 10px;
+        justify-content: space-around;
         align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
         height: 100vh;
-        gap: 2rem;
       }
 
       .pricing-plan {
-        flex: 1;
-        border: 3px solid black;
-        text-align: center;
-        padding: 10px;
-        background-color: #FFF9D0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        max-width: 200px;
+        background-color: #1b1b1b;
         border-radius: 20px;
       }
 
       .plan-title {
+        background-color: #ffa31a;
+        color: #1b1b1b;
         font-weight: bolder;
         font-size: 24px;
-        background-color: #CAF4FF;
-        border-radius: 15px;
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+        border-radius: 10px;
         margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 3px;
       }
 
       .plan-price {
+        text-align: center;
         font-weight: bolder;
-        font-size: 5vh;
+        font-size: 24px;
+        color: 	#ffffff
       }
 
       .plan-features {
-        list-style-type: none;
         text-align: left;
+        list-style-type: none;
+        font-weight: 500;
+        color: white;
       }
 
       .plan-button {
-        width: 30vh;
-        border: none;
-        border-radius: 10px;
-        background-color: #5AB2FF;
-        color: white;
+        width: 60%;
+        border-radius: 20px;
+        margin-left: 20%;
+        margin-bottom: 20px;
+        background-color: #ffa31a;
         font-weight: 600;
+        color: white;
+        border: none;
       }
+
+      
+
+      
+
+      
 
 
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
-        .pricing-container {
+      @media (max-width: 1200px) {
+        .pricing-plan {
+          display: flex;
           flex-direction: column;
-        height: 100%;
         }
-
-        
-        
       }
     </style>
   </head>
