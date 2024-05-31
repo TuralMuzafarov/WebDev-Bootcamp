@@ -27,7 +27,7 @@
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 0;
-        max-width: 200px;
+        min-width: 280px;
         background-color: #1b1b1b;
         border-radius: 20px;
       }
@@ -80,10 +80,11 @@
 
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1200px) {
-        .pricing-plan {
+      @media (max-width: 900px) {
+        .pricing-container {
           display: flex;
           flex-direction: column;
+          height: auto;
         }
       }
     </style>
