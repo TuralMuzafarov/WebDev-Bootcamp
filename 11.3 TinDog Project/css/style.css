@@ -26,3 +26,9 @@
   height: 100px;
   border-radius: 50%;
 }
+
+.feature col {
+  border-radius: 3rem;
+}
+
+
